@@ -1,7 +1,11 @@
 import pathlib
 import os
 import pandas as pd
-from dash import Dash, dcc, html, Input, Output
+
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+from dash.dependencies import Input, Output
 
 app = Dash(__name__, url_base_pathname='/dashboard/')
 server = app.server
